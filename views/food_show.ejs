@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= drink.name %></title>
+    <title><%= food.name %></title>
     <style type="text/css">
         body{
             color: blanchedalmond;
@@ -16,17 +16,17 @@
     <h1>At foo bar</h1>
     <ul>
         
-        <% let capitalizedDrink = drink.name.slice(0,1).toUpperCase() + drink.name.slice(1); %>
+        <% let capitalizedFood = food.name.slice(0,1).toUpperCase() + food.name.slice(1); %>
         
-        <h2>Name: <%= capitalizedDrink %> </h2>
+        <h2>Name: <%= capitalizedFood %> </h2>
         
-        <h3>Price: <%= drink.price %> </h3>
+        <h3>Price: <%= food.price %> </h3>
         
-        <img src=<%= drink.image.replace('.jpg', '.png') %>>
+        <img src=<%= food.image.replace('.jpg', '.png') %>>
 
         </br>
 
-        <a href="/drinks">Return Home</a>
+        <a href="/foods">Return Home</a>
 
     </ul>
 </body>
